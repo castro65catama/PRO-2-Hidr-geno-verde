@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVALUACIÓN DEL USO DE HERRAMIENTAS PEDAGÓGICAS ACTIVAS PARA EL APRENDIZAJE DE LOS PROCESOS DE PRODUCCIÓN DE HIDRÓGENO & SEMILLERO PRO-2 (PROCESOS PRODUCTIVOS) HIDRÓGENO VERDE Y AZUL, LA APUESTA PARA LA TRANSICIÓN ENERGÉTICA | ETITC”</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
+        /* ===== PROPORCIONALIDAD GENERAL ===== */
+        /* ===== BOTONES DE NAVEGACIÓN ===== */
+        .nav-wrapper {
+            width: min(96%, 1400px);
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+        .nav-title {
+            font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+            font-weight: 900;
+            letter-spacing: -0.03em;
+            white-space: nowrap;
+        }
+        .nav-buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .nav-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 40px;
+            padding: 9px 14px;
+            border: 1px solid #d1d5db;
+            border-radius: 9px;
+            background: #ffffff;
+            color: #1e293b;
+            font-size: 0.72rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+        .nav-button:hover {
+            background: #10b981;
+            border-color: #10b981;
+            color: #ffffff;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 10px rgba(16,185,129,0.22);
+        }
+        @media (max-width: 900px) {
+            .nav-wrapper { justify-content: center; }
+            .nav-title { width: 100%; text-align: center; }
+            .nav-buttons { width: 100%; }
+        }
+        @media (max-width: 600px) {
+            .nav-sticky { padding-top: 10px; padding-bottom: 10px; }
+            .nav-buttons { gap: 6px; }
+            .nav-button { flex: 1 1 calc(50% - 6px); min-width: 135px; padding: 8px 9px; font-size: 0.68rem; }
+        }
+
+        * { box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; background-color: #ffffff; color: #1e293b; overflow-x: hidden; }
+        .nav-sticky { position: sticky; top: 0; z-index: 50; background: rgba(255, 255, 255, 0.96); backdrop-filter: blur(10px); border-bottom: 1px solid #e2e8f0; }
+        .nav-sticky > div { max-width: 1400px; margin: auto; }
+        .section-padding { padding: clamp(50px, 7vw, 90px) 0; }
+        .container { width: min(92%, 1200px); margin-left: auto; margin-right: auto; }
+        h1 { font-size: clamp(2rem, 5vw, 4.2rem) !important; line-height: 1.08 !important; letter-spacing: -0.035em !important; max-width: 1100px; margin-left: auto; margin-right: auto; }
+        h2 { font-size: clamp(1.8rem, 4vw, 3rem) !important; line-height: 1.15 !important; }
+        h3 { line-height: 1.25; }
+        p { line-height: 1.7; }
+        #inicio > div { max-width: 1100px; }
+        #inicio .bg-white\/10 { max-width: 950px; margin: 0 auto; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: clamp(12px, 2vw, 22px); align-items: stretch; }
+        .gallery-item { width: 100%; border-radius: 12px; overflow: hidden; background: #f1f5f9; box-shadow: 0 4px 10px rgba(0,0,0,0.08); }
+        .img-container { width: 100%; aspect-ratio: 4 / 3; background: #f1f5f9; display: flex; align-items: center; justify-content: center; }
+        .img-container img { width: 100%; height: 100%; object-fit: contain; display: block; }
+        #electrolizador a { min-height: 48px; display: inline-flex; align-items: center; justify-content: center; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { vertical-align: top; }
+        @media (max-width: 768px) {
+            .section-padding { padding: 45px 0; }
+            .container { width: 94%; }
+            h1 { font-size: clamp(1.8rem, 8vw, 2.8rem) !important; }
+            h2 { font-size: clamp(1.7rem, 7vw, 2.4rem) !important; }
+            .gallery-grid { grid-template-columns: 1fr; gap: 15px; }
+            .img-container { aspect-ratio: 4 / 3; }
+            #inicio .bg-white\/10 { padding: 1.5rem; }
+        }
+        @media (min-width: 1400px) {
+            .gallery-grid { grid-template-columns: repeat(4, 1fr); }
+            .container { max-width: 1250px; }
+        }
+        .custom-link { color: #10b981; font-weight: 600; text-decoration: underline; transition: color 0.2s; }
+        .custom-link:hover { color: #059669; }
+    </style>
+</head>
+<body>
+
+    <nav class="nav-sticky py-3 px-4 sm:px-6">
+        <div class="nav-wrapper">
+            <div class="nav-title">SEMILLERO DE HIDRÓGENO VERDE Y AZUL</div>
+            <div class="nav-buttons" aria-label="Navegación principal">
+                <a href="#inicio" class="nav-button">Inicio</a>
+                <a href="#metodologia" class="nav-button">Metodología</a>
+                <a href="#investigacion" class="nav-button">Investigación</a>
+                <a href="#electrolizador" class="nav-button">Electrolizador</a>
+                <a href="#resultados" class="nav-button">Resultados</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio" class="section-padding bg-slate-900 text-white px-6">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h1 class="text-4xl md:text-6xl font-black mb-6 uppercase tracking-tighter"> Hidrógeno y nuevas tecnologías -  PRO-2-Hidrógeno verde </h1>
+            <p class="text-xl text-emerald-400 font-bold mb-8">Institución: ETITC – Escuela Tecnológica Instituto Técnico Central 
+<br>Programa: Ingenierías de procesos industriales y Mecatronica</p>
+            <p class="text-lg leading-relaxed mb-12">Donde los estudiantes diseñan, construyen y prueban tecnologías de hidrógeno mediante la metodología "Aprender Haciendo".</p>
+            
+            <div class="bg-white/10 p-8 rounded-2xl text-left border border-white/20">
+                <h3 class="text-2xl font-black mb-4 uppercase">¿QUIENES SOMOS?</h3>
+                <p class="text-slate-300 leading-relaxed mb-6">
+                    Con dos años y medio de trayectoria, nuestro semillero se ha consolidado como un espacio de innovación dedicado al estudio de las energías limpias. Bajo la metodología 'Aprender Haciendo', hemos transformado la teoría en experiencia tangible, iniciando con una rigurosa revisión documental sobre el ecosistema del hidrógeno. A lo largo de este tiempo, hemos profundizado en la ciencia de la electrólisis, analizando las diferencias críticas entre las tecnologías PEM (Membrana de Intercambio Protónico) y Alcalina, lo que nos ha permitido desarrollar actividades teórico-prácticas diseñadas para potenciar el aprendizaje técnico y científico de nuestros estudiantes.
+                </p>
+                <h4 class="text-emerald-400 font-black uppercase mb-2">Nuestra misión</h4>
+                <p class="text-slate-300 italic mb-6">
+                    Formar investigadores capaces de enfrentar desafíos reales en el campo de las energías renovables, específicamente en tecnologías de producción de hidrógeno mediante electrólisis.
+                </p>
+                <p class="text-slate-300 leading-relaxed">
+                    Bajo la filosofía de 'Aprender Haciendo', nuestros estudiantes trascienden la teoría: diseñan, fabrican y optimizan prototipos propios de electrolizadores alcalinos. Este enfoque práctico nos permite dominar la tecnología del hidrógeno desde la experiencia directa en el laboratorio, impulsando soluciones reales hacia la transición energética.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="metodologia" class="section-padding px-6">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-4xl font-black uppercase tracking-tighter mb-8 border-b-4 border-emerald-500 inline-block">2. Metodología</h2>
+            <p class="text-sm font-bold text-slate-400 mb-6 uppercase">Semillero de Investigación PRO-2-Hidrógeno | Instituto Técnico Central</p>
+            
+            <div class="space-y-8 text-slate-700">
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">1. Marco Metodológico: La Estrategia "Aprender Haciendo"</h3>
+                   <p class="leading-relaxed mb-4">La investigación se sustenta en la metodología "Aprender Haciendo" (Learning by Doing), un enfoque de aprendizaje activo que posiciona al estudiante como eje central de la construcción del conocimiento. Esta estrategia se ha implementado de manera integral, vinculando la experimentación en laboratorios químicos con el uso de entornos digitales avanzados, tales como simulaciones virtuales y portales educativos especializados en hidrógeno verde.</p>
+                </div>
+
+                <div class="bg-slate-50 p-6 rounded-xl">
+                    <h4 class="font-black mb-4 uppercase text-sm">Beneficios Respaldados por la Comunidad Pedagógica e Ingenieril</h4>
+                    <ul class="space-y-4 list-disc pl-5 text-sm">
+                        <li><strong>Desarrollo de Competencias Profesionales (Soft & Hard Skills):</strong> Según estudios sobre educación en ingeniería (e.g., International Journal of STEM Education, 2022), el aprendizaje basado en proyectos prácticos mejora la capacidad de resolución de problemas complejos y el trabajo colaborativo en entornos técnicos.</li>
+                       <li><strong>Transferencia Tecnológica Directa:</strong> La transición del entorno digital (simulaciones 3D) al físico (manufactura) reduce la brecha entre la teoría académica y la aplicación industrial, un estándar promovido por el marco CDIO (Concebir, Diseñar, Implementar, Operar) vigente en la formación de ingenieros modernos.</li>
+                       <li><strong>Aumento de la Retención Cognitiva:</strong> Investigaciones pedagógicas recientes confirman que la manipulación física de variables en laboratorio químico, apoyada por plataformas interactivas, incrementa la fijación de conceptos abstractos en comparación con los métodos de enseñanza pasivos.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">2. Desarrollo del Prototipado y Validación Técnica</h3>
+                   <ul class="space-y-2 text-sm">
+                       <li><strong>Investigación y Simulación:</strong> Se inició con una fase de investigación documental y experimentación controlada con tecnología PEM (Proton Exchange Membrane).</li>
+                       <li><strong>Modelado Digital:</strong> Se empleó el software SolidWorks para el diseño técnico detallado, garantizando la viabilidad mecánica antes de la manufactura.</li>
+                       <li><strong>Fabricación y Ensamblaje:</strong> Se culminó con la producción de un electrolizador alcalino (HHO) en los laboratorios de la universidad y la integración de un sistema de movilidad a escala propulsado por hidrógeno.</li>
+                       <li><strong>Validación Experimental:</strong> Se realizaron pruebas de eficiencia energética para verificar el rendimiento real del prototipo frente a los parámetros teóricos establecidos.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">3. Sistema de Evaluación por Competencias</h3>
+                   <p class="mb-4">Para garantizar el rigor académico, se aplicó una evaluación continua mediante una matriz de competencias segmentada en tres dimensiones:</p>
+                    <ul class="space-y-2 text-sm italic">
+                        <li><strong>Dimensión Técnica:</strong> Medición de la destreza operativa y seguridad en el laboratorio químico.</li>
+                       <li><strong>Dimensión Analítica:</strong> Capacidad de resolución de conflictos técnicos en entornos digitales y 3D.</li>
+                       <li><strong>Dimensión Conceptual:</strong> Dominio de los fundamentos termodinámicos y químicos del hidrógeno verde obtenidos a través del portal educativo.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-slate-200 text-xs text-slate-500">
+                <p class="font-bold mb-2">Notas para la Citación Bibliográfica (Referencias de apoyo):</p>
+                <ul class="space-y-1">
+                    <li>UNESCO (2021): Engineering for Sustainable Development.</li>
+                    <li>Journal of Cleaner Production (2023): Tecnologías de hidrógeno verde.</li>
+                    <li>IEEE Transactions on Education (2024): Laboratorios virtuales y prácticos.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="investigacion" class="section-padding bg-slate-50 px-6">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-4xl font-black uppercase tracking-tighter mb-12 border-b-4 border-blue-500 inline-block">3. Investigación</h2>
+            
+            <div class="grid gap-6">
+                <div class="bg-white p-4 rounded-lg shadow-sm flex items-center space-x-4">
+                    <span class="bg-blue-100 text-blue-600 w-8 h-8 flex items-center justify-center rounded-full font-bold">1</span>
+                    <a href="https://youtu.be/oowxNN0Zutc?si=_aMouhkJYoINxrEv" target="_blank" class="custom-link">Hidrógeno: ¿Será esta la clave para el futuro energético de la humanidad? | Virtual Pro</a>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex items-center space-x-4">
+                    <span class="bg-blue-100 text-blue-600 w-8 h-8 flex items-center justify-center rounded-full font-bold">2</span>
+                    <a href="https://youtu.be/Ac3M15Ri9yU?si=YJvestCpYaNmGstX" target="_blank" class="custom-link">¿EL FUTURO DE LA ENERGÍA? | Hidrógeno, ventajas y desventajas</a>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex items-center space-x-4">
+                    <span class="bg-blue-100 text-blue-600 w-8 h-8 flex items-center justify-center rounded-full font-bold">3</span>
+                    <a href="https://online.fliphtml5.com/znxb/qizn/#p=1" target="_blank" class="custom-link">Revista sociedad colombiana de química</a>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex items-center space-x-4">
+                    <span class="bg-blue-100 text-blue-600 w-8 h-8 flex items-center justify-center rounded-full font-bold">4</span>
+                    <a href="https://www.minenergia.gov.co/es/ecosistema-hidrogeno-colombia/" target="_blank" class="custom-link">ECOSISTEMA DE HIDRÓGENO - Ministerio de Minas</a>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex items-center space-x-4">
+                    <span class="bg-blue-100 text-blue-600 w-8 h-8 flex items-center justify-center rounded-full font-bold">5</span>
+                    <a href="https://youtu.be/RMxPm8b9TbU?si=4xI35bi8J_Qx_Usa" target="_blank" class="custom-link">Hidrógeno Verde: la energía del mañana</a>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex items-center space-x-4">
+                    <span class="bg-blue-100 text-blue-600 w-8 h-8 flex items-center justify-center rounded-full font-bold">6</span>
+                    <a href="https://view.genially.com/67bf231a81b145963451318a" target="_blank" class="custom-link">PROCESOS DE PRODUCCIÓN de HIDRÓGENO</a>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex items-center space-x-4">
+                    <span class="bg-blue-100 text-blue-600 w-8 h-8 flex items-center justify-center rounded-full font-bold">7</span>
+                    <a href="https://view.genially.com/67cc4e336ae57e8144bd477a" target="_blank" class="custom-link">Producción de Hidrógeno Verde: Diseño y Fabricación de un Electrolizador Alcalino Compacto</a>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex items-center space-x-4">
+                    <span class="bg-blue-100 text-blue-600 w-8 h-8 flex items-center justify-center rounded-full font-bold">8</span>
+                    <a href="https://youtu.be/kKoFh8M33oQ?si=KStOLUmf6tX2Tu-N" target="_blank" class="custom-link">CONSTRUCCIÓN GENERADOR DE HHO</a>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex items-center space-x-4">
+                    <span class="bg-blue-100 text-blue-600 w-8 h-8 flex items-center justify-center rounded-full font-bold">13</span>
+                    <a href="https://campusvirtualpes.etitc.edu.co/pluginfile.php/1179785/mod_resource/content/1/ECUACIONES%20DISE%C3%91O%20ELECTROLIZADOR.pdf" target="_blank" class="custom-link">Diseño y Modelado Dinámico de un Electrolizador Alcalino de Celda Seca</a>
+                </div>
+            </div>
+            <div class="mt-8 grid md:grid-cols-2 gap-4">
+                <div class="space-y-2">
+
+<div class="space-y-2">
+
+  <a href="https://github.com/ascc10245-a11y/semillero-/blob/main/Dise%C3%B1o%20de%20un%20electrolizador.pdf" target="_blank"
+     class="block p-4 bg-slate-200 rounded text-xs font-bold text-slate-600 hover:bg-slate-300 transition">
+    9. Diseño de un electrolizador.pdf
+  </a>
+
+  <a href="https://github.com/ascc10245-a11y/semillero-/blob/main/Modelo%20din%C3%A1mico%20de%20un%20electrolizador.pdf" target="_blank"
+     class="block p-4 bg-slate-200 rounded text-xs font-bold text-slate-600 hover:bg-slate-300 transition">
+    10. Modelo dinámico de un electrolizador.pdf
+  </a>
+
+  <a href="Thttps://github.com/ascc10245-a11y/semillero-/blob/main/Tesis%20dise%C3%B1o%20de%20electrolizador.pdf" target="_blank"
+     class="block p-4 bg-slate-200 rounded text-xs font-bold text-slate-600 hover:bg-slate-300 transition">
+    11. Tesis diseño de electrolizador.pdf
+  </a>
+
+  <a href="https://github.com/ascc10245-a11y/semillero-/blob/main/Dise%C3%B1o%20de%20un%20electrolizador.pdf" target="_blank"
+     class="block p-4 bg-slate-200 rounded text-xs font-bold text-slate-600 hover:bg-slate-300 transition">
+    12. Diseño de electrolizador alcalino.pdf
+  </a>
+
+</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="electrolizador" class="section-padding px-6">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-4xl font-black uppercase tracking-tighter mb-8 border-b-4 border-emerald-500 inline-block">4. Electrolizador</h2>
+            <div class="max-w-4xl mb-12">
+                <h3 class="text-2xl font-bold mb-4">Electrolizador Alcalino</h3>
+                <p class="text-slate-600 leading-relaxed mb-6">
+                    En este apartado se presentan los planos y fichas técnicas desarrollados durante la fase de investigación para la fabricación del electrolizador alcalino HHO. La construcción del prototipo se llevó a cabo en los laboratorios de la Escuela Tecnológica Instituto Técnico Central (ETITC), aprovechando su infraestructura de talleres y su enfoque pedagógico basado en la metodología de 'Aprender Haciendo'.
+                </p>
+                <div class="flex flex-wrap gap-4 mb-10">
+                    <a href="https://www.flipsnack.com/77FC5CFF8D6/ilovepdf_merged-1" target="_blank" class="bg-emerald-500 text-white px-6 py-3 rounded-lg font-bold hover:bg-emerald-600 transition">fichas técnicas</a>
+                    <a href="https://www.flipsnack.com/77FC5CFF8D6/planos-electrolizador" target="_blank" class="bg-slate-900 text-white px-6 py-3 rounded-lg font-bold hover:bg-slate-800 transition">planos electrolizador</a>
+                </div>
+           </div>
+
+            <h4 class="text-xl font-black uppercase mb-8 text-slate-400">imágenes de la elaboración de planos y fabricación del prototipo</h4>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item"><div class="img-container"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3gYXH9zkiKxkhtoFWM7QoBDup411CjijGOypJRBjTjpDScykylGGeDX9ekS3VayaGEr_06ZpphjkxY7mq-tIVYBo_CYgQl33xZiiZjA_SIdYBtjz1J5U4FNE1Ag1YblWbQZWZCCHDgF3_mf_yHcOnMeFC0CnR0SEB8VI0zr921pBz_UMCX0f54HOisKxc/s607/WhatsApp%20Image%202026-05-10%20at%205.01.33%20PM.jpeg"></div></div>
+                <div class="gallery-item"><div class="img-container"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMnHRe5Mumerw2B7d5O1OpQQHHMB5-DeydPm9_r_hmHSk583OO0G6plWdccqjZjzSzI2q8_OIczZgROtg-AOq8sgTXvoaXZDQgs_bccUhyphenhyphenHOe-8cWaBUBZqBmoBma_UDLQ-Bcvs2dr4wr56qQfG4m9LE5vro-W7QA9ocgbFlvYjFZtxYB9nQCzzmLC-BCg/s531/WhatsApp%20Image%202026-05-10%20at%204.53.38%20PM%20(1).jpeg"></div></div>
+                <div class="gallery-item"><div class="img-container"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgO3-p-FQiAox5cVDk59jzOapxTcucWObNR7k2KjCApSwfV6iMVKuURqhvqq9-3WKL9bhvMDNJKx32oz6bRqkVE-s12z0lhtfMGx9q6TJkRtafeKhQx9Dpg2hXiWE7kXftFGQlNB5OI5PkyrwByXLgCE-RsGPNeVHPJGSFsidRoUwKvzTVZ9i8F2fYxfRCB/s607/WhatsApp%20Image%202026-05-10%20at%204.53.38%20PM.jpeg"></div></div>
+                <div class="gallery-item"><div class="img-container"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjr5CzR944RaPugrFu4NBYC1OYWOZg-_TJobnLBhvxFsa2MtIwnD4DU9QPPbLgd5N547IdGuDV0AFvNd7rMVO8nYLhtzpOc5JRv7Jzehj1q-ON8-6oe4eQBH6vi6ovB-CnXNqzL-EXWeUW79tVSP4CmCwHmCN__WFAUNYYZo10EEDzGqUJx3gBpiF-nVtOm/s1599/WhatsApp%20Image%202026-05-10%20at%204.57.31%20PM.jpeg"></div></div>
+                <div class="gallery-item"><div class="img-container"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGCzwMV1Dth8wnDJ2gTZk9DXuMN05Wc0BJjveON0Ez9DLC8mUXmVnur73BoiiSC_0GjE9L1qPT9Pak60eNhxvIiOZV_boWLBD7d7MivlLUuUu7W3eKkfUv35sXciSpuPobfDL7cc8Jv-P18FhmdGmo1ex_9VYufnaoy86lWEKpBsdgkpjHPhhoydvzRZ1j/s1599/WhatsApp%20Image%202026-05-10%20at%204.58.12%20PM.jpeg"></div></div>
+                <div class="gallery-item"><div class="img-container"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgM9-SjX4TH2i6UfM-vumAhcl5uVYE6aHTgjGfHW8rqr3mw8VNv__7_DD_-TdLtbEcf2986jCcYu_CSWXHX_rlYPO9QQUE6xP5QXqz1JTLdbAl8XkP9Xa_Mfe02o1bT6JwwyIP855ETIJ23aG7LVKlLCbtd9g6DYU53s3h9uGqeUsMP8Y_mwJkNLgG3nxze/s1599/WhatsApp%20Image%202026-05-10%20at%204.58.50%20PM.jpeg"></div></div>
+                <div class="gallery-item"><div class="img-container"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDeY5DjzdN1ICuKBFeNkosmJZGSdAt_AU8Zc9aoEcaMSc-ENnL9D8FCFSyxZZetaKu7-ImyEMJhi3ImaHdWKcmoS0C09Cs6CypQ8vp9f22HQCOyeXuriUmg8FqpuBF0JUF9E18j68tAoPjj37jm_vXZwOWekDlWqWvCuGJ5UwariMee6EKtDVGWWcA5ykk/s1599/WhatsApp%20Image%202026-05-10%20at%204.58.12%20PM.jpeg"></div></div>
+                <div class="gallery-item"><div class="img-container"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRpKvN95KRQQ0B1FuNbeDHD6At14fU1ZwOvbIbuVVsQ74SttuKO4WR8x-S6MasEPQ044dva_IVsmj_xOoVqLfRpXdlOIOzfI69ibpb2DBUrFvonpckR6aLL-tNrNIob4mMHuW96U_7B88so6i8AMK7nC9MDUU3aiwTENyROYb1ulGYKwBc4doI5f45jwuT/s1599/WhatsApp%20Image%202026-05-10%20at%204.57.31%20PM.jpeg"></div></div>
+                <div class="gallery-item"><div class="img-container"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpQ6Im6PyP7KxhgJUsjihkRif7lWAkPUKiqHmsqENIEGLXThKkx-dnLDhlc69Se1UxEBpzrpnN-e9hyphenhyphen8Fgf45fK3UGJar00B-AHzGkiWgO51KqyJCJNfsNB0zXfR8YOzB7AcR6EBkrB73VX70KgwiZvCDXRO-D8MOw1vzNKLUJXCSaWoSWAXsQqQBDJ4uF/s531/WhatsApp%20Image%202026-05-10%20at%204.53.38%20PM%20(1).jpeg"></div></div>
+                <div class="gallery-item"><div class="img-container"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKGNJC5Ywm_0ZU-rR4CvxhH6U92G1KM4-NQjeEazj73wPdBzxtObZxmZsG7vxlXIZIPZXUTk-p3I4z_lKGlNjMULVWpwnlwnmLYjEv9-RFDmgcgQLxmzwtoB9HsZmzcsx11T33mJdciQ84PfZYqpRD6JnoInpioKUOEiOt9D5rwjP49D6b5qUckkRgB5gy/s1280/WhatsApp%20Image%202026-05-10%20at%204.53.39%20PM%20(3).jpeg"></div></div>
+                <div class="gallery-item"><div class="img-container"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIKm7Rs737iVUVhuWXkWobN0VepaCU3s84c06qcG9kGlPUpY-LHcPc1UQ_KOQeGuijxFAnfCqDORYm9QL1XT8q3MTGp-F-FxIq86tQsJKJBYe6uK-b88dXfW4w2DhtLdOQZiUCGBe7Z-FYvg2QBJVy9UL0XkLrLFow7kLBatiF8uPlHjb43Tfohwx5fAP6/s1599/WhatsApp%20Image%202026-05-10%20at%205.00.25%20PM.jpeg"></div></div>
+                <div class="gallery-item"><div class="img-container"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyC5uzykGOzwT3CmLcO_TllSXnoUFcAk9XXZRDb3hEb5oABb29u_xeD8q978y4-HW0QdypZzOJeY3KbnTSvVTOCfcqm6ZlaodSNXnd2Xj3I9sXzDSQWgL4oihwu8JjfoEc7SuJdKt50bYKrUz2Xuu_Dabbpy7rSyhWZyIKjmXApbANenjEDmq9xwtGSr0c/s1600/WhatsApp%20Image%202026-05-10%20at%204.53.39%20PM%20(5).jpeg"></div></div>
+                <div class="gallery-item"><div class="img-container"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhTjd9Kk7C_kCRtedRu16zDimcqyn-vbFANGD6dAGmF9-ej245F0ODHZUwCy6T9awtnMMLJ9-MeYnwgNgvnib40NDig3g8aC0Qy-dvvlvNn9fAiSw8rU9MiiJVTPwGHxKh0YcNl5HeZlgL6pq6RXb8pYuTsvl8dSrOnmkR7GEF0SJP6S_ho6Jtgr8rbebEE/s1599/WhatsApp%20Image%202026-05-10%20at%205.02.01%20PM.jpeg"></div></div>
+                <div class="gallery-item"><div class="img-container"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGpcyaUdx7XmtP6tZZj5nRwV5bRAxPMTpWfrQy8gcwO7X8UFf3a8CQZybP9MlBbrgRgqOAypnvODMb80NW3mMV20mIrRbNDNsmJrKfeXhPqbv0t5TtzzCTTs3ZOQPx6umPLWIowev-fvtX8w1Ug51T3pZvUqEZN3_SaFoPffjuVcpS7AgOpI6Y5mEjjpyi/s1600/WhatsApp%20Image%202026-05-10%20at%205.00.57%20PM.jpeg"></div></div>
+                <div class="gallery-item"><div class="img-container"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjsDT9MNKOkMzdH9BISwMYs_A569ZQKjFz-JkACdfEpkvmBsHCY1mqyF8KR7dqzVelhZh2UyOH1ZmBLtZd5L6iI_Yz2w492hcDmyrASfj76FxV4h16x3J_sxCMULrF1d6M5Lbcg3TJOai0fBAJTbRI8cDQr9Zk04EyYNJNDV5u8YF8_jfzHomVboQ3M9mr/s1599/WhatsApp%20Image%202026-05-10%20at%204.59.29%20PM.jpeg"></div></div>
+                <div class="gallery-item"><div class="img-container"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDB-lr4KcwdGIK80eR3Wq5HvpcKpj0II5NjX5NyBoDxAhcxNeBV760S7z9uary-4uT7oLDbqPruFMFxWhMOqUBMyvrNf4EFKZ45EzggF-84ICHD9ASVLuxE3vTq8yi5rho_tr9hx21XYNIAKXpwzDjQaJ3uNv10ejbhakDAYsUAQ951BqWqqRNHAPcKmjq/s1599/WhatsApp%20Image%202026-05-10%20at%204.53.40%20PM.jpeg"></div></div>
+                <div class="gallery-item"><div class="img-container"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhpJlOI1wWqbE0ee-988YB8i8HDKxTdN0xdigLmQIKAEWI1OLF9EAb9UtVh3ULcmAkOlblA1Utze6bxBZsXm1-2HGwOo0wR6ZKZgnnqIncqO6ugsNhTtxxuipi3abLOoyL9EppnqIIvJBWmMCMUq7Vtag9C7M0ONO9TPqhRCjm4Zrh8k5kUMXNf3c6A8H8/s1280/WhatsApp%20Image%202026-05-10%20at%204.53.40%20PM%20(4).jpeg"></div></div>
+                <div class="gallery-item"><div class="img-container"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimScV5c_OabKKA5vB-9Ea05eOQByR4SX-z_qVm_BsnVrC1Eh0IfbORwx6IVrsQMzUc3Q-9escZU7g57KpBNIxgunxRm0r3c7rsRCknpVHz7AmWUnfCeWKBfnBrLL6Gj0uF69erwjydsVF7k0KgAcCJLn3uu9G2yKYqN3xaItcA8VWOXZF8pDtwJ1RrO0Y-/s1599/WhatsApp%20Image%202026-05-10%20at%204.53.39%20PM%20(4).jpeg"></div></div>
+                <div class="gallery-item"><div class="img-container"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFYxDN6VqT3FvTOuH8QAD8SlG82P5uCH6Z0V9PpmnoAX7qFuZrObGolQRY0Y70BhYCoyuEx0xUKGW2bKI7TyNudirtfgqUXzAt985u1Q6l6nEVpBzZbKElUsezdA7et3oqsShj0Pyj_OBJkvsGT1MHdOeNRl-EAUUkGClQVss8-OH-bWNOavETbkx0Ck5U/s1599/WhatsApp%20Image%202026-05-10%20at%204.22.19%20PM.jpeg"></div></div>
+                <div class="gallery-item"><div class="img-container"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCi6hirZ_G0hxk0x8RGK2lEd3kn_vygl2Bbt5WgfjS7jHYiK0OjHL_cW4YqgVTG88E-Vs-FF0gVHuMWp1vJ06xKdEcNJOKoUW4FnslbNVX9VUba81kdqimZlm7EuqH1EnGHNmulrZYCOeBFp5vA50vjMM_6Om_taZe8qy1jMHfeb2MIRCSmE2dEMWipkPY/s1280/WhatsApp%20Image%202026-05-10%20at%204.52.46%20PM%20(2).jpeg"></div></div>
+                <div class="gallery-item"><div class="img-container"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLo9gI4jfPBKJubqArzE3u7077OlxDF1_NdkhqFocQsSSGoJVgigtief37p2aKZQmo2pJChJ4qX5n-IhL2l7kzeLqBoh4lqEE1VFLq-wtgs_tybc2hUp_lwUxpp2x-HyNA0BVhE5TKCRyLY5mHPDt95BgTRIjaloiED1Z89SRWSqtUhn526oojZlczjjdi/s1280/WhatsApp%20Image%202026-05-10%20at%204.52.46%20PM.jpeg"></div></div>
+                <div class="gallery-item"><div class="img-container"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwCF4qI4JuX1u4HxC0JfJSPlgLJifxR-MJbSJyblsHSnEPpiFEHacj4B-KDs6TrX5HbxkZcqkstsNTRXyHAbZncr6fNlLOq7uz4-NP3Ixnx5g-KsdUh5YqabnLFjXVtGq8bWlFCD1byd6woPu_f6chNNSjHqiO8JaA0hizHwY7l9uGGmPsZITtgKHt0rHV/s1280/WhatsApp%20Image%202026-05-10%20at%204.52.45%20PM%20(2).jpeg"></div></div>
+            </div>
+        </div>
+    </section>
+
+  <section id="resultados" class="section-padding bg-slate-50 px-6">
+    <div class="container mx-auto max-w-6xl">
+
+        <h2 class="text-4xl font-black uppercase tracking-tighter mb-8 border-b-4 border-blue-500 inline-block">
+            5. Resultados y Análisis
+        </h2>
+
+        <div class="max-w-4xl mb-12">
+            <p class="text-slate-600 leading-relaxed mb-6">
+                En esta sección se presentan y analizan los resultados obtenidos a partir de
+                los veinticinco ensayos experimentales realizados en tres jornadas distintas.
+                El análisis permite evaluar la eficiencia energética del proceso de electrólisis
+                del agua, así como identificar la influencia de las variables eléctricas y las
+                principales fuentes de pérdida de energía.
+            </p>
+        </div>
+
+        <div class="text-black leading-8 space-y-8">
+
+            <!-- 1. Resumen de resultados -->
+            <div>
+                <h3 class="text-2xl font-bold text-black mb-4">
+                    1. Resumen de los resultados experimentales
+                </h3>
+
+                <p class="mb-6">
+                    Se realizaron un total de <strong>25 ensayos válidos</strong>, distribuidos
+                    en tres jornadas experimentales. En cada prueba se registraron el voltaje
+                    aplicado, la corriente eléctrica, el tiempo de operación y el volumen total
+                    de gas generado. A partir de estos datos se calcularon la potencia eléctrica,
+                    la energía suministrada, la masa de hidrógeno producida y la energía química
+                    correspondiente.
+                </p>
+
+                <div class="overflow-x-auto">
+                    <table class="w-full border border-slate-400 text-left">
+                        <thead class="bg-slate-200">
+                            <tr>
+                                <th class="p-4 border border-slate-400 text-black">Jornada</th>
+                                <th class="p-4 border border-slate-400 text-black">N.º ensayos</th>
+                                <th class="p-4 border border-slate-400 text-black">Media η (%)</th>
+                                <th class="p-4 border border-slate-400 text-black">Desv. estándar</th>
+                                <th class="p-4 border border-slate-400 text-black">Mínimo (%)</th>
+                                <th class="p-4 border border-slate-400 text-black">Máximo (%)</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td class="p-4 border border-slate-400 font-semibold">Día 1</td>
+                                <td class="p-4 border border-slate-400">4</td>
+                                <td class="p-4 border border-slate-400">7,67</td>
+                                <td class="p-4 border border-slate-400">4,05</td>
+                                <td class="p-4 border border-slate-400">5,60</td>
+                                <td class="p-4 border border-slate-400">13,74</td>
+                            </tr>
+
+                            <tr>
+                                <td class="p-4 border border-slate-400 font-semibold">Día 2</td>
+                                <td class="p-4 border border-slate-400">9</td>
+                                <td class="p-4 border border-slate-400">5,98</td>
+                                <td class="p-4 border border-slate-400">1,00</td>
+                                <td class="p-4 border border-slate-400">4,90</td>
+                                <td class="p-4 border border-slate-400">7,84</td>
+                            </tr>
+
+                            <tr>
+                                <td class="p-4 border border-slate-400 font-semibold">Día 3</td>
+                                <td class="p-4 border border-slate-400">12</td>
+                                <td class="p-4 border border-slate-400">5,86</td>
+                                <td class="p-4 border border-slate-400">1,36</td>
+                                <td class="p-4 border border-slate-400">3,41</td>
+                                <td class="p-4 border border-slate-400">8,43</td>
+                            </tr>
+
+                            <tr class="bg-slate-100">
+                                <td class="p-4 border border-slate-400 font-bold">Global</td>
+                                <td class="p-4 border border-slate-400 font-bold">25</td>
+                                <td class="p-4 border border-slate-400 font-bold">6,19</td>
+                                <td class="p-4 border border-slate-400">1,92</td>
+                                <td class="p-4 border border-slate-400">3,41</td>
+                                <td class="p-4 border border-slate-400">13,74</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p class="text-sm text-slate-600 mt-3">
+                    Tabla 1. Resumen estadístico de la eficiencia energética por jornada de ensayo.
+                </p>
+            </div>
+
+
+            <!-- 2. Eficiencia energética -->
+            <div>
+                <h3 class="text-2xl font-bold text-black mb-4">
+                    2. Eficiencia energética
+                </h3>
+
+                <p class="mb-4">
+                    La eficiencia energética global promedio obtenida durante los ensayos fue de
+                    <strong>6,19 %</strong>, con una desviación estándar de <strong>1,92 %</strong>.
+                    Los valores registrados estuvieron comprendidos entre <strong>3,41 %</strong>
+                    y <strong>13,74 %</strong>.
+                </p>
+
+                <p class="mb-4">
+                    La mayor eficiencia correspondió al ensayo 1 del Día 1, realizado a
+                    <strong>6,5 V y 0,38 A</strong>, alcanzando un valor de
+                    <strong>13,74 %</strong>. Por otra parte, la mayoría de los resultados
+                    se concentraron entre aproximadamente el 4 % y el 8 %.
+                </p>
+
+                <div class="bg-white border-l-4 border-blue-500 p-6 rounded-r-lg shadow-sm">
+                    <p class="font-semibold text-black">
+                        Eficiencia energética:
+                    </p>
+
+                    <p class="text-lg font-bold mt-2">
+                        η = E<sub>química</sub> (H₂) / E<sub>eléctrica</sub> × 100 %
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- 3. Influencia del régimen eléctrico -->
+            <div>
+                <h3 class="text-2xl font-bold text-black mb-4">
+                    3. Influencia del voltaje y la corriente
+                </h3>
+
+                <p class="mb-4">
+                    El análisis de los resultados no muestra una correlación lineal clara y
+                    positiva entre la eficiencia y las variables eléctricas. Sin embargo,
+                    se observa una tendencia en la que los ensayos realizados con corrientes
+                    más elevadas, cercanas a <strong>3 A</strong>, tienden a ubicarse en los
+                    rangos inferiores de eficiencia.
+                </p>
+
+                <p class="mb-4">
+                    Los ensayos realizados a aproximadamente <strong>11–12 V y 2,6–3,2 A</strong>
+                    presentaron eficiencias consistentemente inferiores al 6,5 %. En contraste,
+                    algunas condiciones de menor corriente alcanzaron valores superiores de
+                    eficiencia.
+                </p>
+
+                <p>
+                    Este comportamiento puede relacionarse con el incremento de las pérdidas
+                    óhmicas y del sobrepotencial en los electrodos cuando aumenta la densidad
+                    de corriente, provocando que una mayor fracción de la energía eléctrica
+                    se disipe en forma de calor.
+                </p>
+            </div>
+
+
+            <!-- 4. Volumen de gas -->
+            <div>
+                <h3 class="text-2xl font-bold text-black mb-4">
+                    4. Volumen de gas y tiempo de operación
+                </h3>
+
+                <p class="mb-4">
+                    Los resultados muestran una tendencia positiva entre el tiempo de electrólisis
+                    y el volumen total de gas generado. En términos generales, a mayor tiempo de
+                    operación se obtienen mayores volúmenes de gas.
+                </p>
+
+                <p>
+                    No obstante, la dispersión observada indica que la tasa de producción no es
+                    completamente constante y depende de las condiciones eléctricas aplicadas
+                    durante cada ensayo.
+                </p>
+
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-slate-300 mt-6">
+                    <p class="font-semibold mb-2">
+                        Reacción global de electrólisis:
+                    </p>
+
+                    <p class="text-xl font-bold text-center py-3">
+                        2 H₂O (l) → 2 H₂ (g) + O₂ (g)
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- 5. Comparación entre jornadas -->
+            <div>
+                <h3 class="text-2xl font-bold text-black mb-4">
+                    5. Comparación entre jornadas experimentales
+                </h3>
+
+                <p class="mb-4">
+                    El Día 1 presentó la mayor dispersión y el valor máximo de eficiencia,
+                    debido principalmente al ensayo inicial realizado bajo condiciones de
+                    baja potencia.
+                </p>
+
+                <p class="mb-4">
+                    Los Días 2 y 3 presentaron distribuciones más compactas, con valores medios
+                    de <strong>5,98 %</strong> y <strong>5,86 %</strong>, respectivamente.
+                    Estos resultados muestran un comportamiento más estable entre jornadas
+                    cuando se mantienen condiciones de operación comparables.
+                </p>
+
+                <p>
+                    Una vez considerados los valores extremos, las tres jornadas presentan
+                    comportamientos similares, con medias cercanas al intervalo de
+                    <strong>5,9–6,5 %</strong>.
+                </p>
+            </div>
+
+
+            <!-- 6. Consideraciones sobre cálculos -->
+            <div>
+                <h3 class="text-2xl font-bold text-black mb-4">
+                    6. Consideraciones sobre los cálculos
+                </h3>
+
+                <p class="mb-4">
+                    Para los cálculos experimentales se utilizaron como parámetros de referencia
+                    una densidad del oxígeno de <strong>1,429 g/ml</strong>, una densidad del
+                    hidrógeno de <strong>0,0899 g/ml</strong>, una fracción molar de H₂ de
+                    <strong>0,6667</strong> y una fracción molar de O₂ de
+                    <strong>0,3333</strong>.
+                </p>
+
+                <p class="mb-4">
+                    El análisis metodológico identificó que los valores de densidad utilizados
+                    corresponden en realidad a densidades típicas expresadas en g/L bajo
+                    condiciones estándar. Por tanto, existe una diferencia de tres órdenes
+                    de magnitud en las masas absolutas calculadas.
+                </p>
+
+                <p>
+                    Asimismo, el poder calorífico utilizado en los cálculos fue de
+                    <strong>85,7 J/mol</strong>. El informe señala que este valor es
+                    considerablemente inferior al valor de referencia del poder calorífico
+                    inferior del hidrógeno, aproximadamente <strong>241,8 kJ/mol</strong>.
+                    Estas diferencias deben ser corregidas en futuros análisis para obtener
+                    magnitudes absolutas más realistas.
+                </p>
+            </div>
+
+
+            <!-- 7. Fuentes de pérdida -->
+            <div>
+                <h3 class="text-2xl font-bold text-black mb-4">
+                    7. Principales fuentes de pérdida de energía
+                </h3>
+
+                <p class="mb-4">
+                    La baja eficiencia observada puede estar relacionada con diferentes
+                    mecanismos de pérdida de energía presentes en el montaje experimental:
+                </p>
+
+                <ul class="list-disc pl-6 space-y-3">
+                    <li>
+                        <strong>Sobrepotencial de activación:</strong>
+                        asociado principalmente a las reacciones electroquímicas que ocurren
+                        en los electrodos.
+                    </li>
+
+                    <li>
+                        <strong>Resistencia óhmica:</strong>
+                        relacionada con la resistencia del electrolito y de los contactos
+                        eléctricos.
+                    </li>
+
+                    <li>
+                        <strong>Fugas o recombinación de gases:</strong>
+                        posibles pérdidas de H₂ y O₂ durante la generación y recolección.
+                    </li>
+
+                    <li>
+                        <strong>Disipación térmica:</strong>
+                        parte de la energía eléctrica suministrada se transforma en calor
+                        que no es aprovechado directamente como energía química.
+                    </li>
+                </ul>
+            </div>
+
+
+            <!-- 8. Conclusiones -->
+            <div>
+                <h3 class="text-2xl font-bold text-black mb-4">
+                    8. Conclusiones de los resultados
+                </h3>
+
+                <div class="overflow-x-auto">
+                    <table class="w-full border border-slate-400 text-left">
+                        <thead class="bg-slate-200">
+                            <tr>
+                                <th class="p-4 border border-slate-400 text-black">
+                                    Aspecto
+                                </th>
+
+                                <th class="p-4 border border-slate-400 text-black">
+                                    Resultado
+                                </th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td class="p-4 border border-slate-400 font-semibold">
+                                    Eficiencia global
+                                </td>
+
+                                <td class="p-4 border border-slate-400">
+                                    La eficiencia energética media fue de 6,19 %, con una
+                                    desviación estándar de 1,92 %.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="p-4 border border-slate-400 font-semibold">
+                                    Condiciones eléctricas
+                                </td>
+
+                                <td class="p-4 border border-slate-400">
+                                    Las condiciones de menor potencia tendieron a presentar
+                                    mayores eficiencias.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="p-4 border border-slate-400 font-semibold">
+                                    Reproducibilidad
+                                </td>
+
+                                <td class="p-4 border border-slate-400">
+                                    El sistema presentó un comportamiento similar entre
+                                    jornadas bajo condiciones eléctricas comparables.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="p-4 border border-slate-400 font-semibold">
+                                    Mejoras propuestas
+                                </td>
+
+                                <td class="p-4 border border-slate-400">
+                                    Se recomienda revisar el diseño de los electrodos,
+                                    la concentración del electrolito, el control de temperatura
+                                    y la hermeticidad del sistema de recolección.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="p-4 border border-slate-400 font-semibold">
+                                    Cálculos futuros
+                                </td>
+
+                                <td class="p-4 border border-slate-400">
+                                    Se deben corregir las unidades de densidad y el valor
+                                    empleado para el poder calorífico del hidrógeno.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+</div>
+
+            <h5 class="text-xl font-black uppercase mb-8 text-slate-400">galería de resultados</h5>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item"><div class="img-container"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNp_y6iwQV766g7HIjplIlyFzqyj6St-EF1YmYWSv9hw1YD5YPIf2UTHIqrt2-sbgkJ0qXZ69HsxTKxEpA79Ew4gfAYFjNKgPyyz_Id86zh3kTizFinvgcPcUa5R2kdYz-1cyZR8RPfJs5laInd59nr04CNnUIMmsVvgTZuaDsInYroAbD8Qlxol_CYEK5/s1024/WhatsApp%20Image%202026-05-09%20at%2011.21.00%20PM.jpeg"></div></div>
+                <div class="gallery-item"><div class="img-container"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2Xj9rSelWMcFvTd9ai6FLbQ4L87kBGNch-ABERKgtCMcalQNL4NaoQY4Uomlk4Fs30WfZG7QlVOGf2feHIaNS-YXxjNzd8EqENPZqVZKQm96Z39xpg9WOJBSJvi8dVW5b4Khrq-mL207OqhdKsyFx77Jkm3dMBkjE6z80LeWWzKce6-o1Ywf7J9ZC9Sre/s1599/WhatsApp%20Image%202026-05-10%20at%204.52.48%20PM%20(1).jpeg"></div></div>
+                <div class="gallery-item"><div class="img-container"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5LBU8n0JkZU2VwlfOY21oGVxCbpk44d0C97lMliNx-pAmx7cBd2K1DZ49WKkn3-yROchCgMUSRBGvqBxjJfqSEOUXeyn4S5AmCNJV6DSejqHcMaA4fHNgFKMs-fRj9AgVRA01bcIeA5BEFw-jsamfVxUNspATUQnG8YxnOcmpDZ-HlwuBIbzdtFijOp-r/s1599/WhatsApp%20Image%202026-05-10%20at%204.52.49%20PM%20(1).jpeg"></div></div>
+                <div class="gallery-item"><div class="img-container"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjn-fTPQaKDCTr9dHFtKqL8N11yhk6ORg5wxUm6DndRjblb5NeMgW25JcgtphtJcS47Jvq-NUEEJNlOaRkPPcHKqSsbWpiEx0EpGxuZrkn6zH0rLk9x6vovYwUQRNbEE6FkmMT2tzYDYuEtUYJ330fDj00wDMkXOSMVt2QfKpqjlktTb6psfdeq5YHnKaQR/s1599/WhatsApp%20Image%202026-05-10%20at%204.52.50%20PM%20(1).jpeg"></div></div>
+                <div class="gallery-item"><div class="img-container"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXDUhoMv4n6Jil7GJWcvZYm41UrXNPv2G65sCBnm6IrQyFQNeS7YA3i57wmOaODD49ljJ1Wilk6-ZR7WUlvQIDkkoQ5XUjeO8AC3EDKL-r-xR_qQfM6nvtMmhLQT_4UFNEgUykxtHJcUB6BjFS5_348uU-WZkH2tS8MPpHlF9Fgxo41nkxDbzOA3yHhO1Y/s1599/WhatsApp%20Image%202026-05-10%20at%204.52.50%20PM.jpeg"></div></div>
+                <div class="gallery-item"><div class="img-container"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGQjMN5c70uWkP7WKVpw0JsJg1MzwW7yrXG4KIoCWsd855Jsp8id74-7i-gdVn97uLONiqfOQkrv40N4PZ_ITQ2B-7uCeHMEUvXsGK_ofQh_UyUT940nT-Xr9YltXfKqX012DT6pDBufNO3ZyWdTz2lA1xzKUqXNccymDZSlWjrET_LIHft3byzAMS6_J-/s1599/WhatsApp%20Image%202026-05-10%20at%204.52.53%20PM%20(1).jpeg"></div></div>
+                <div class="gallery-item"><div class="img-container"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhopVp6iz4h8id3078zEfKqxh6hyzv_iPyEchyphenhyphenolSK2vQ2qJkfMgZapUfW2hnnhy4h8p57UsjiibFzf8ZgumnjfW-hDKsO3l9MFDAsJdXtviOvCeHoEeXVtNz1-OLil_JOXaXG3VSaoto5i2YAPsXFw7v3XCWyML2vkyvGvwbkkxATef0sSArE0u7NeH5ct/s1599/WhatsApp%20Image%202026-05-10%20at%204.52.54%20PM%20(1).jpeg"></div></div>
+                <div class="gallery-item"><div class="img-container"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmzyDHKTwmSIs4CxyTXChqcXgvjxySjEfQ61BtTPbbjdtNCx-DKuW2ojqurvarYmKTiXNyCRVr1jY09LkpNQYl_XaixCMIsxlbkRE9wqt54XokHwEkBVQ3fYPU-SF7_Lyy26mCtVUHrXIISCZdBP_OQjplRxUAih-sB7mP7pRL5dcypQSqATBqq8tstDf3/s1599/WhatsApp%20Image%202026-05-10%20at%204.52.56%20PM%20(1).jpeg"></div></div>
+                <div class="gallery-item"><div class="img-container"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYSjiN-L5-AkcyiUUEo3547uPHaxGR9mrlvhzQXb1y-RkXV5rW498nDm7sOpVhDooxcgoEjV8pOcVKr6l1MVQ-6f5_nDf0Kks8v00MR9Kfnd9zT0pNcFvpN6NlH6ESaLFXIkfh54Pqey86DliKbnLwpAxX1pFWoqdkbdF8OVIXOakbiVbSMr1tufGAuHvt/s1599/WhatsApp%20Image%202026-05-10%20at%204.52.56%20PM%20(3).jpeg"></div></div>
+                <div class="gallery-item"><div class="img-container"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRizQH-fRUMBpXZK3fYUMKl4LGRVan5s-a7YweBi5k1zm-JBdz0toDOLRkzLIuTbKpvQeTGLKURkxIbpdN4QD7mUAiRA2_0pA5AnxGARJVX3jLwepknad99cGZaEltbKKkTqBQ51zVysopsr87Qh8C1ZgyJKPoTh1Yd0I0CN9dr5UsaF9NQHuPSk-EYzJX/s1599/WhatsApp%20Image%202026-05-10%20at%204.52.56%20PM.jpeg"></div></div>
+                <div class="gallery-item"><div class="img-container"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsbo3htZCKXsQYrMzu8qL9EHm8acey9oEMhLnzSCh7ZwKph8uYW5_uHWbAjeESwuk6Z3yxBenTgVRtDvumQnpC4rKtOHODeWGfFxw77bzdnP8PKIxJG2dkoTB3n-RusXnIlrBqhQZzvXdRPihPRgHpcKdq4PPL63DKcH4_7uexHA_nYAQAokddEf-mGnaq/s1600/WhatsApp%20Image%202026-05-10%20at%204.52.57%20PM.jpeg"></div></div>
+                <div class="gallery-item"><div class="img-container"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1O2zOXALj5E-GYg4qMAwStc_g0D7MxPU4oJZUJF-eo1PTrHrMvWJRNf9Dkz76gGkp27bcUABX0FWbUWikKjzH3T6qxLIKjGvRi1OaqboSzxhM09ldhw36B4b_vAtfHYMkuZ_E8g0Ndf3zJt-dLaM4N_iDElH3HMsTmbfbcI_UdqwJf4bEYLchVrnMlIm_/s1600/WhatsApp%20Image%202026-05-10%20at%204.53.00%20PM.jpeg"></div></div>
+                
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-500 py-12 text-center text-xs uppercase tracking-widest border-t border-white/10">
+        &copy; 2026 Hidrógeno y nuevas tecnologías & Semillero PRO-2-Hidrógeno | Escuela Tecnológica Instituto Técnico Central
+    </footer>
+
+</body>
+</html>
